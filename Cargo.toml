@@ -1,0 +1,21 @@
+[package]
+name = "hirth"
+version = "0.0.0"
+authors = ["Barlog <barlog@tanelorn.li>"]
+edition = "2018"
+
+readme = "README.md"
+documentation = "https://docs.rs/hirth"
+repository = "https://github.com/barlog-m/hirth"
+homepage = "https://github.com/barlog-m/hirth"
+license = "MIT"
+description = """
+Architecture system for software applications based on messages
+"""
+
+[dependencies]
+
+[profile.release]
+lto = true
+opt-level = 'z'
+panic = 'abort'
